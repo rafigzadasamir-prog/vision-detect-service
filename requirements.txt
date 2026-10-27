@@ -1,0 +1,14 @@
+# Runtime dependencies for vision-detect-service.
+# Install with: pip install -r requirements.txt
+# For development (tests, linting) also install: pip install -e ".[dev]"
+# For the optional Streamlit demo also install:    pip install -e ".[demo]"
+
+fastapi>=0.111,<1.0
+uvicorn[standard]>=0.29,<1.0
+# See pyproject.toml for why this is pinned to a narrow, tested range.
+torch>=2.2,<2.3
+torchvision>=0.17,<0.18
+pillow>=10.0,<12.0
+python-multipart>=0.0.9,<0.1
+pydantic>=2.6,<3.0
+numpy>=1.26,<2.0
